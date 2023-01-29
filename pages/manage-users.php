@@ -2,7 +2,7 @@
 
   // make sure only admin can access
   if ( !Authentication::whoCanAccess('admin') ) {
-    header('Location: /dashboard');
+    header('Location: /home');
     exit;
   }
 
@@ -145,8 +145,8 @@ require dirname(__DIR__) . '/parts/header.php';
         </table>
       </div>
       <div class="text-center">
-        <a href="/dashboard" class="btn btn-link btn-sm"
-          ><i class="bi bi-arrow-left"></i> Back to Dashboard</a
+        <a href="/home" class="btn btn-link btn-sm"
+          ><i class="bi bi-arrow-left"></i> Back</a
         >
       </div>
     </div>

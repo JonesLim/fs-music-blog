@@ -7,7 +7,7 @@
     // If the user already logged in, we'll redirect to dashboard page
     if ( Authentication::isLoggedIn() )
     {
-      header('Location: /dashboard');
+      header('Location: /home');
       exit;
     }
 
@@ -52,7 +52,7 @@
             CSRF::removeToken( 'login_form' );
 
             // 4.2: redirect to dashboard
-            header('Location: /dashboard');
+            header('Location: /home');
             exit;
 
         } // end - !$user_id

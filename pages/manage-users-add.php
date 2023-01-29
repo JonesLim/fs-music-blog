@@ -2,7 +2,7 @@
 
   // make sure only admin can access
   if ( !Authentication::whoCanAccess('admin') ) {
-    header('Location: /dashboard');
+    header('Location: /home');
     exit;
   }
 

@@ -27,9 +27,6 @@
         case 'logout':
             require 'pages/logout.php';
             break;
-        case 'dashboard':
-            require 'pages/dashboard.php';
-            break;
         case 'manage-users':
             require 'pages/manage-users.php';
             break;

@@ -6,5 +6,5 @@ if ( Authentication::isLoggedIn() ) {
     Authentication::logout();
 }
 
-header('Location: /login');
+header('Location: /home');
 exit;
